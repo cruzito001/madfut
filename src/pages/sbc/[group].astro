@@ -41,17 +41,32 @@ const { group } = Astro.props;
     <div class={styles.modalContent}>
       <span id="closeModal" class={styles.closeModal}>&times;</span>
       <img id="modalImage" class={styles.modalImage} src="" alt="" />
+      <button id="downloadBtn" class={styles.downloadBtn}>Download</button>
     </div>
   </div>
 
   <script>
-    function setupModal() {
+    function downloadImage(url: string, filename: string): void {
+      fetch(url)
+        .then(response => response.blob())
+        .then(blob => {
+          const link = document.createElement('a');
+          link.href = URL.createObjectURL(blob);
+          link.download = filename;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+    }
+
+    function setupModal(): void {
       const modal = document.getElementById('imageModal');
       const modalImage = document.getElementById('modalImage') as HTMLImageElement;
       const closeModal = document.getElementById('closeModal');
+      const downloadBtn = document.getElementById('downloadBtn') as HTMLButtonElement;
       const viewSolutionBtns = document.querySelectorAll('.viewSolutionBtn');
 
-      if (!modal || !modalImage || !closeModal) {
+      if (!modal || !modalImage || !closeModal || !downloadBtn) {
         console.error('Modal elements not found');
         return;
       }
@@ -65,18 +80,27 @@ const { group } = Astro.props;
             modal.style.display = "block";
             modalImage.src = imageUrl;
             modalImage.alt = imageName || '';
+            downloadBtn.style.display = "block";
           }
         });
       });
 
       closeModal.addEventListener('click', () => {
         modal.style.display = "none";
+        downloadBtn.style.display = "none";
       });
 
       window.addEventListener('click', (event) => {
         if (event.target === modal) {
           modal.style.display = "none";
+          downloadBtn.style.display = "none";
         }
+      });
+
+      downloadBtn.addEventListener('click', () => {
+        const imageUrl = modalImage.src;
+        const filename = `${modalImage.alt}.webp`;
+        downloadImage(imageUrl, filename);
       });
     }
 

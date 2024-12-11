@@ -126,3 +126,22 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+.downloadBtn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.downloadBtn:hover {
+  background-color: #45a049;
+}

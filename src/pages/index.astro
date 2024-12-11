@@ -1,9 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import LatestSBC from '../components/LatestSBC/LatestSBC';
 ---
 
 <Layout title="MadFut">
-	<h1>MadFut</h1>
-	<p>SBC solutions and FATAL squad builder</p>
+	<main>
+		<h1>Welcome to MadFut Community</h1>
+		<LatestSBC client:load />
+	</main>
 </Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 0.5rem;
+		width: 800px;
+		max-width: calc(100% - 1rem);
+		color: #333;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 0.5em;
+	}
+</style>
 

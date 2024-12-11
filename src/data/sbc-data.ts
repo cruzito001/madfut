@@ -1,4 +1,3 @@
-// Definición de tipos
 interface SBCTemplate {
   name: string;
   imageUrl: string;
@@ -9,14 +8,13 @@ interface SBCGroup {
   imageUrl: string;
   templatesCount: number;
   templates: SBCTemplate[];
-  order: number; // Nuevo campo para indicar el orden/antigüedad
+  order: number;
 }
 
-// Datos iniciales
 const sbcGroups: SBCGroup[] = [
   {
-    name: "POTM Erling Haaland",
-    imageUrl: "/images/sbc/potm-haaland.jpg",
+    name: "POTM Haaland",
+    imageUrl: "/sbc/haaland/haaland.png",
     templatesCount: 8,
     templates: [
       {
@@ -52,56 +50,56 @@ const sbcGroups: SBCGroup[] = [
         imageUrl: "/images/sbc/haaland/haaland-hybrid.jpg",
       },
     ],
-    order: 1, // El más antiguo
+    order: 1,
   },
   {
     name: "Andrew Robertson",
-    imageUrl: "/images/sbc/andrew-robertson.jpg",
+    imageUrl: "/sbc/robertson/robertson.png",
     templatesCount: 0,
     templates: [],
     order: 2,
   },
   {
     name: "Ligue 1",
-    imageUrl: "/images/sbc/ligue-1.jpg",
+    imageUrl: "/sbc/ligue1/ligue1.png",
     templatesCount: 0,
     templates: [],
     order: 3,
   },
   {
     name: "Radja Nainggolan",
-    imageUrl: "/images/sbc/radja-nainggolan.jpg",
+    imageUrl: "/sbc/nainggolan/nainggolan.png",
     templatesCount: 0,
     templates: [],
     order: 4,
   },
   {
     name: "Raúl",
-    imageUrl: "/images/sbc/raul.jpg",
+    imageUrl: "/sbc/raul/raul.png",
     templatesCount: 0,
     templates: [],
     order: 5,
   },
   {
     name: "Rodri",
-    imageUrl: "/images/sbc/rodri.jpg",
+    imageUrl: "/sbc/rodri/rodri.png",
     templatesCount: 0,
     templates: [],
     order: 6,
   },
   {
     name: "Mats Hummels",
-    imageUrl: "/images/sbc/mats-hummels.jpg",
+    imageUrl: "/sbc/hummels/hummels.png",
     templatesCount: 0,
     templates: [],
     order: 7,
   },
   {
-    name: "Stephan El Shaarawy",
-    imageUrl: "/images/sbc/stephan-el-shaarawy.jpg",
+    name: "El Shaarawy",
+    imageUrl: "/sbc/shaarawy/shaarawy.png",
     templatesCount: 0,
     templates: [],
-    order: 8, // El más reciente
+    order: 8,
   },
 ];
 

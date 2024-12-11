@@ -1,0 +1,83 @@
+.main {
+  padding: 2rem 1rem;
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: var(--font-montserrat);
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.count {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #4caf50;
+  margin: 0.5rem 0 0;
+}
+
+.groupImage {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 2rem;
+  border-radius: 15px;
+}
+
+.templateGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.templateItem {
+  text-align: center;
+}
+
+.templateImage {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.templateItem:hover .templateImage {
+  transform: scale(1.05);
+}
+
+.templateName {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0 0;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 3rem 2rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .count {
+    font-size: 1.5rem;
+  }
+
+  .templateGrid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

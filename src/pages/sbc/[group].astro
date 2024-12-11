@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import sbcGroups from '../../data/sbc-data';
+import styles from './sbc-group.module.css';
+
+export function getStaticPaths() {
+  return sbcGroups.map(group => ({
+    params: { group: group.name.toLowerCase().replace(/\s+/g, '-') },
+    props: { group },
+  }));
+}
+
+const { group } = Astro.props;
+---
+
+<Layout title={`MadFut - ${group.name} SBC`}>
+  <main class={styles.main}>
+    <header class={styles.header}>
+      <h1 class={styles.title}>{group.name}</h1>
+      <p class={styles.count}>{group.templatesCount} templates</p>
+    </header>
+    <img src={group.imageUrl} alt={group.name} class={styles.groupImage} />
+    <div class={styles.templateGrid}>
+      {group.templates.map((template) => (
+        <div class={styles.templateItem}>
+          <img src={template.imageUrl} alt={template.name} class={styles.templateImage} />
+          <h3 class={styles.templateName}>{template.name}</h3>
+        </div>
+      ))}
+    </div>
+  </main>
+</Layout>
+

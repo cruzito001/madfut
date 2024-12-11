@@ -1,5 +1,6 @@
 .latestSBC {
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
+  box-sizing: border-box;
 }
 
 .title {
@@ -13,7 +14,7 @@
 .sbcGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .sbcItem {
@@ -87,35 +88,26 @@
 }
 
 @media (min-width: 768px) {
-  .sbcGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+  .latestSBC {
+    padding: 1rem;
   }
-
+  .sbcGrid {
+    gap: 1rem;
+  }
   .sbcItem {
     border-radius: 20px;
   }
-
   .gradient {
     border-radius: 20px;
   }
-
   .sbcContent {
     padding: 1.5rem;
   }
-
   .sbcName {
     font-size: 1.5rem;
   }
-
   .sbcCount {
     font-size: 1rem;
     margin-top: 0.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .sbcGrid {
-    grid-template-columns: repeat(2, 1fr);
   }
 }

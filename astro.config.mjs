@@ -10,5 +10,13 @@ export default defineConfig({
         "@images": "/src/images",
       },
     },
+    css: {
+      modules: {
+        generateScopedName: "[name]__[local]___[hash:base64:5]",
+      },
+    },
+  },
+  build: {
+    inlineStylesheets: "auto",
   },
 });

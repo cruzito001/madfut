@@ -23,7 +23,7 @@ export default function Header() {
           <a href="/fatal" className={styles.navLink}>
             FATAL
           </a>
-          <a href="/fatal" className={styles.navLink}>
+          <a href="/fatal-sim" className={styles.navLink}>
             FATAL SIM
           </a>
         </nav>

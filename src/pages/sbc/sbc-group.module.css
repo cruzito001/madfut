@@ -36,24 +36,16 @@
 
 .templateGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.5rem;
 }
 
 .templateItem {
   text-align: center;
-}
-
-.templateImage {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
+  background-color: #f8f9fa;
   border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.templateItem:hover .templateImage {
-  transform: scale(1.05);
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .templateName {
@@ -61,7 +53,54 @@
   font-weight: 600;
   font-size: 1rem;
   color: #333;
-  margin: 0.5rem 0 0;
+  margin: 0 0 1rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modalContent {
+  position: relative;
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  max-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalImage {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.closeModal {
+  color: #f1f1f1;
+  position: absolute;
+  top: -2rem;
+  right: 1rem;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.closeModal:hover {
+  color: #4caf50;
 }
 
 @media (min-width: 768px) {
@@ -78,6 +117,12 @@
   }
 
   .templateGrid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .templateGrid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

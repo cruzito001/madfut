@@ -9,11 +9,13 @@ const LatestSBC: React.FC = () => {
     <section className={styles.latestSBC}>
       <h2 className={styles.title}>Latest SBCs</h2>
       <div className={styles.sbcGrid}>
-        {latestSBCs.map((sbc) => (
+        {latestSBCs.map((sbc, index) => (
           <a
-            href={`/sbc/${sbc.name.toLowerCase()}`}
+            href={`/sbc/${sbc.name.toLowerCase().replace(/\s+/g, "-")}`}
             key={sbc.name}
-            className={styles.sbcItem}
+            className={`${styles.sbcItem} ${
+              index === 3 ? styles.desktopHidden : ""
+            }`}
           >
             <div className={styles.imageWrapper}>
               <img

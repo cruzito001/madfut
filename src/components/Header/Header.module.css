@@ -1,0 +1,130 @@
+.header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  position: relative;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logoIcon {
+  background: #4caf50;
+  color: white;
+  font-family: var(--font-ubuntu);
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
+.logoText {
+  font-family: var(--font-montserrat);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #4caf50;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #f8f9fa;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    z-index: 10;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .nav.active {
+    transform: scaleY(1);
+  }
+
+  .menuButton {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 20;
+  }
+
+  .menuIcon {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+
+  .menuIcon::before,
+  .menuIcon::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    transition: transform 0.3s ease;
+  }
+
+  .menuIcon::before {
+    top: -8px;
+  }
+
+  .menuIcon::after {
+    bottom: -8px;
+  }
+
+  .active .menuIcon {
+    background-color: transparent;
+  }
+
+  .active .menuIcon::before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .active .menuIcon::after {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+}

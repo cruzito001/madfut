@@ -14,7 +14,7 @@ export default function Footer() {
           <a href="/fatal" className={styles.navLink}>
             FATAL
           </a>
-          <a href="/coming-soon" className={styles.navLink}>
+          <a href="/fatal-sim" className={styles.navLink}>
             FATAL SIM
           </a>
         </nav>

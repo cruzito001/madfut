@@ -1,0 +1,145 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.card {
+  position: relative;
+  aspect-ratio: 3/4;
+  perspective: 1000px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.card:hover {
+  z-index: 2;
+}
+
+.cardInner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  padding: 1rem;
+}
+
+.card:hover .cardInner {
+  transform: translateY(-5px);
+}
+
+.seriesNumber {
+  font-family: var(--font-bungee);
+  font-size: 4rem;
+  line-height: 1;
+  color: #3a7fff; /* Updated color */
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .seriesNumber {
+  transform: scale(1.05);
+}
+
+.seriesName {
+  font-family: var(--font-montserrat);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.card:hover .seriesName {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.solutionButtons {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease 0.1s;
+}
+
+.solutionButtons.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.solutionButton {
+  background: #3a7fff; /* Updated color */
+  color: white;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 8px;
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 0.65rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.solutionButton:hover {
+  background: #5591ff; /* Updated hover color */
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding: 0 0.5rem;
+  }
+
+  .card {
+    aspect-ratio: 2/3;
+  }
+
+  .cardInner {
+    padding: 0.75rem;
+  }
+
+  .seriesNumber {
+    font-size: 2.5rem;
+  }
+
+  .seriesName {
+    font-size: 0.8rem;
+    opacity: 1;
+    transform: none;
+    margin-bottom: 0.5rem;
+  }
+
+  .solutionButtons {
+    position: static;
+    opacity: 1;
+    transform: none;
+    margin-top: 0.5rem;
+  }
+
+  .solutionButton {
+    padding: 0.25rem 0.4rem;
+    font-size: 0.6rem;
+  }
+}

@@ -80,3 +80,44 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
+
+@media (max-width: 768px) {
+  .bentoGrid {
+    padding: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .bentoItem {
+    padding: 1rem;
+  }
+
+  .bentoItem h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .bentoItem p {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .redditLink {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+}

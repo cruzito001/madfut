@@ -20,10 +20,10 @@ export default function Header() {
           <a href="/sbc" className={styles.navLink}>
             SBC
           </a>
-          <a href="/fatal" className={styles.navLink}>
+          <a href="/coming-soon" className={styles.navLink}>
             FATAL
           </a>
-          <a href="/fatal-sim" className={styles.navLink}>
+          <a href="/coming-soon" className={styles.navLink}>
             FATAL SIM
           </a>
         </nav>

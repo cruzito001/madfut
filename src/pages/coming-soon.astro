@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ComingSoonComponent from '../components/ComingSoon/ComingSoon';
+---
+
+<Layout title="Coming Soon - MadFut Community">
+  <main>
+    <ComingSoonComponent client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    color: #333;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>
+

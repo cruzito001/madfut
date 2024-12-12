@@ -24,8 +24,13 @@ const FatalGrid: React.FC = () => {
                 hoveredCard === series.seriesNumber ? styles.visible : ""
               }`}
             >
-              {series.solutions.map((_, index) => (
-                <button key={index} className={styles.solutionButton}>
+              {series.solutions.map((solution, index) => (
+                <button
+                  key={index}
+                  className={`${styles.solutionButton} viewSolutionBtn`}
+                  data-image={solution.imageUrl}
+                  data-name={`${series.name} - Solution ${index + 1}`}
+                >
                   Solution {index + 1}
                 </button>
               ))}

@@ -16,7 +16,6 @@ const fatalSeries: FatalSeries[] = [
     solutions: [
       { imageUrl: "/fatal/series77/1.webp" },
       { imageUrl: "/fatal/series77/2.webp" },
-      { imageUrl: "/fatal/series77/3.webp" },
     ],
     order: 1,
   },
@@ -26,7 +25,6 @@ const fatalSeries: FatalSeries[] = [
     solutions: [
       { imageUrl: "/fatal/series81/1.webp" },
       { imageUrl: "/fatal/series81/2.webp" },
-      { imageUrl: "/fatal/series81/3.webp" },
     ],
     order: 2,
   },
@@ -36,7 +34,6 @@ const fatalSeries: FatalSeries[] = [
     solutions: [
       { imageUrl: "/fatal/series85/1.webp" },
       { imageUrl: "/fatal/series85/2.webp" },
-      { imageUrl: "/fatal/series85/3.webp" },
     ],
     order: 3,
   },
@@ -46,7 +43,6 @@ const fatalSeries: FatalSeries[] = [
     solutions: [
       { imageUrl: "/fatal/series87/1.webp" },
       { imageUrl: "/fatal/series87/2.webp" },
-      { imageUrl: "/fatal/series87/3.webp" },
     ],
     order: 4,
   },
@@ -56,7 +52,6 @@ const fatalSeries: FatalSeries[] = [
     solutions: [
       { imageUrl: "/fatal/series90/1.webp" },
       { imageUrl: "/fatal/series90/2.webp" },
-      { imageUrl: "/fatal/series90/3.webp" },
     ],
     order: 5,
   },
@@ -66,7 +61,6 @@ const fatalSeries: FatalSeries[] = [
     solutions: [
       { imageUrl: "/fatal/series93/1.webp" },
       { imageUrl: "/fatal/series93/2.webp" },
-      { imageUrl: "/fatal/series93/3.webp" },
     ],
     order: 6,
   },
@@ -76,7 +70,6 @@ const fatalSeries: FatalSeries[] = [
     solutions: [
       { imageUrl: "/fatal/seriesX/1.webp" },
       { imageUrl: "/fatal/seriesX/2.webp" },
-      { imageUrl: "/fatal/seriesX/3.webp" },
     ],
     order: 7,
   },

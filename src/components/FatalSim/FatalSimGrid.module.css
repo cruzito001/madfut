@@ -38,10 +38,10 @@
 }
 
 .seriesNumber {
-  font-family: var(--font-bungee);
+  font-family: var(--font-bungee-demo);
   font-size: 4rem;
   line-height: 1;
-  color: #3a7fff; /* Updated color */
+  color: #3a7fff;
   text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
     -2px 2px 0 #000;
   margin-bottom: 0.5rem;
@@ -88,7 +88,7 @@
 }
 
 .solutionButton {
-  background: #3a7fff; /* Updated color */
+  background: #3a7fff;
   color: white;
   border: none;
   padding: 0.3rem 0.5rem;
@@ -101,7 +101,7 @@
 }
 
 .solutionButton:hover {
-  background: #5591ff; /* Updated hover color */
+  background: #5591ff;
   transform: translateY(-2px);
 }
 

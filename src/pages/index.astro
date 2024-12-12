@@ -1,12 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import LatestSBC from '../components/LatestSBC/LatestSBC';
+import BentoGrid from '../components/BentoGrid/BentoGrid';
 ---
 
 <Layout title="MadFut">
   <main>
     <h1>Welcome to MadFut Community</h1>
     <LatestSBC client:load />
+    <BentoGrid client:load />
   </main>
 </Layout>
 

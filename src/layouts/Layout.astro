@@ -17,6 +17,53 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Montserrat:wght@300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style is:global>
+      @font-face {
+        font-family: "Bungee Demo Regular";
+        src: url("https://bungee-project.djr.com/fonts/Bungee_Web/BungeeLayers/BungeeLayers-Regular.eot?#ie") format("embedded-opentype"),
+            url("https://bungee-project.djr.com/fonts/Bungee_Web/BungeeLayers/BungeeLayers-Regular.woff2") format("woff2"),
+            url("https://bungee-project.djr.com/fonts/Bungee_Web/BungeeLayers/BungeeLayers-Regular.woff") format("woff"),
+            url("https://bungee-project.djr.com/fonts/Bungee_Web/BungeeLayers/BungeeLayers-Regular.svg#font") format("svg");
+      }
+
+      :root {
+        --font-montserrat: 'Montserrat', sans-serif;
+        --font-ubuntu: 'Ubuntu', sans-serif;
+        --font-bungee: 'Bungee Tint', system-ui;
+        --font-bungee-demo: 'Bungee Demo Regular', system-ui;
+        --content-width: 800px;
+      }
+
+      html {
+        font-family: var(--font-montserrat);
+        background: #fff;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      .content {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+        flex: 1;
+        box-sizing: border-box;
+      }
+
+      @media screen and (min-width: 768px) {
+        .content {
+          max-width: var(--content-width);
+        }
+      }
+    </style>
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -28,43 +75,4 @@ const { title } = Astro.props;
     <Footer />
   </body>
 </html>
-
-<style is:global>
-  :root {
-    --font-montserrat: 'Montserrat', sans-serif;
-    --font-ubuntu: 'Ubuntu', sans-serif;
-    --font-bungee: 'Bungee Tint', system-ui;
-    --content-width: 800px;
-  }
-
-  html {
-    font-family: var(--font-montserrat);
-    background: #fff;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  .content {
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    flex: 1;
-    box-sizing: border-box;
-  }
-
-  @media screen and (min-width: 768px) {
-    .content {
-      max-width: var(--content-width);
-    }
-  }
-</style>
 

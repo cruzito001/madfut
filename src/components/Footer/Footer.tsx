@@ -11,7 +11,7 @@ export default function Footer() {
           <a href="/sbc" className={styles.navLink}>
             SBC
           </a>
-          <a href="/coming-soon" className={styles.navLink}>
+          <a href="/fatal" className={styles.navLink}>
             FATAL
           </a>
           <a href="/coming-soon" className={styles.navLink}>

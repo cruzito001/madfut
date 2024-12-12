@@ -35,6 +35,15 @@ const { group } = Astro.props;
         </div>
       ))}
     </div>
+    <div class={styles.disclaimer}>
+      <svg xmlns="http://www.w3.org/2000/svg" class={styles.disclaimerIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="12"></line>
+        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+      </svg>
+      <p>The solutions presented are possible approaches to each challenge. They may not be the most optimal or use the easiest cards to obtain.</p>
+    </div>
+    
   </main>
 
   <div id="imageModal" class={styles.modal}>
@@ -124,6 +133,30 @@ const { group } = Astro.props;
 
   .viewSolutionBtn:hover {
     background-color: #45a049;
+  }
+
+  .disclaimer {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    color: #495057;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    font-family: var(--font-montserrat);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .disclaimerIcon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.75rem;
+    margin-top: 0.2rem;
+    color: #6c757d;
   }
 </style>
 

@@ -187,6 +187,28 @@ const sbcGroups: SBCGroup[] = [
     ],
     order: 8,
   },
+  {
+    name: "91-Rated Gold",
+    imageUrl: "/sbc/91-rated-gold/91-RatedGold.png",
+    templatesCount: 14,
+    templates: [
+      { name: "Spain", imageUrl: "/sbc/91-rated-gold/1.jpg" },
+      { name: "France", imageUrl: "/sbc/91-rated-gold/2.jpg" },
+      { name: "Norway", imageUrl: "/sbc/91-rated-gold/3.jpg" },
+      { name: "Manchester City", imageUrl: "/sbc/91-rated-gold/4.jpg" },
+      { name: "Barcelona", imageUrl: "/sbc/91-rated-gold/5.jpg" },
+      { name: "Real Madrid", imageUrl: "/sbc/91-rated-gold/6.jpg" },
+      { name: "Quadruple 2023-24", imageUrl: "/sbc/91-rated-gold/7.jpg" },
+      { name: "Top Scorer 2023-24", imageUrl: "/sbc/91-rated-gold/8.jpg" },
+      { name: "Euro 2024", imageUrl: "/sbc/91-rated-gold/9.jpg" },
+      { name: "World Cup 2023", imageUrl: "/sbc/91-rated-gold/10.jpg" },
+      { name: "EPL Goal Record", imageUrl: "/sbc/91-rated-gold/11.jpg" },
+      { name: "Rainbow Squad", imageUrl: "/sbc/91-rated-gold/12.jpg" },
+      { name: "91-Rated Gold", imageUrl: "/sbc/91-rated-gold/13.jpg" },
+      { name: "91-Rated Hybrid", imageUrl: "/sbc/91-rated-gold/14.jpg" },
+    ],
+    order: 9,
+  },
 ];
 
 export default sbcGroups;

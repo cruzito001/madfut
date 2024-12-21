@@ -11,66 +11,45 @@ interface FatalSimSeries {
 
 const fatalSimSeries: FatalSimSeries[] = [
   {
-    name: "Series 78",
-    seriesNumber: 78,
-    solutions: [
-      { imageUrl: "/fatal-sim/series78/1.jpg" },
-      { imageUrl: "/fatal-sim/series78/2.jpg" },
-    ],
+    name: "Series 79",
+    seriesNumber: 79,
+    solutions: [{ imageUrl: "/fatal-sim/series79/1.jpg" }],
     order: 1,
   },
   {
-    name: "Series 82",
-    seriesNumber: 82,
-    solutions: [
-      { imageUrl: "/fatal-sim/series82/1.jpg" },
-      { imageUrl: "/fatal-sim/series82/2.jpg" },
-    ],
+    name: "Series 83",
+    seriesNumber: 83,
+    solutions: [{ imageUrl: "/fatal-sim/series83/1.jpg" }],
     order: 2,
   },
   {
-    name: "Series 85",
-    seriesNumber: 85,
-    solutions: [
-      { imageUrl: "/fatal-sim/series85/1.jpg" },
-      { imageUrl: "/fatal-sim/series85/2.jpg" },
-    ],
+    name: "Series 86",
+    seriesNumber: 86,
+    solutions: [{ imageUrl: "/fatal-sim/series86/1.jpg" }],
     order: 3,
   },
   {
-    name: "Series 87",
-    seriesNumber: 87,
-    solutions: [
-      { imageUrl: "/fatal-sim/series87/1.jpg" },
-      { imageUrl: "/fatal-sim/series87/2.jpg" },
-    ],
+    name: "Series 88",
+    seriesNumber: 88,
+    solutions: [{ imageUrl: "/fatal-sim/series88/1.jpg" }],
     order: 4,
   },
   {
-    name: "Series 90",
-    seriesNumber: 90,
-    solutions: [
-      { imageUrl: "/fatal-sim/series90/1.jpg" },
-      { imageUrl: "/fatal-sim/series90/2.jpg" },
-    ],
+    name: "Series 92",
+    seriesNumber: 92,
+    solutions: [{ imageUrl: "/fatal-sim/series92/1.jpg" }],
     order: 5,
   },
   {
-    name: "Series 93",
-    seriesNumber: 93,
-    solutions: [
-      { imageUrl: "/fatal-sim/series93/1.jpg" },
-      { imageUrl: "/fatal-sim/series93/2.jpg" },
-    ],
+    name: "Series 94",
+    seriesNumber: 94,
+    solutions: [{ imageUrl: "/fatal-sim/series94/1.jpg" }],
     order: 6,
   },
   {
     name: "Series X",
     seriesNumber: 99,
-    solutions: [
-      { imageUrl: "/fatal-sim/seriesX/1.jpg" },
-      { imageUrl: "/fatal-sim/seriesX/2.jpg" },
-    ],
+    solutions: [{ imageUrl: "/fatal-sim/seriesX/1.jpg" }],
     order: 7,
   },
 ];

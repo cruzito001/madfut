@@ -209,6 +209,32 @@ const sbcGroups: SBCGroup[] = [
     ],
     order: 9,
   },
+  {
+    name: "Jesús Navas",
+    imageUrl: "/sbc/jesus-navas/jesus-navas.png",
+    templatesCount: 18,
+    templates: [
+      { name: "Spain", imageUrl: "/sbc/jesus-navas/1.jpg" },
+      { name: "Sevilla Academy", imageUrl: "/sbc/jesus-navas/2.jpg" },
+      { name: "Sevilla", imageUrl: "/sbc/jesus-navas/3.jpg" },
+      { name: "Manchester City", imageUrl: "/sbc/jesus-navas/4.jpg" },
+      { name: "2X Copa Del Rey", imageUrl: "/sbc/jesus-navas/5.jpg" },
+      { name: "Europa League 2006", imageUrl: "/sbc/jesus-navas/6.jpg" },
+      { name: "Europa League 2007", imageUrl: "/sbc/jesus-navas/7.jpg" },
+      { name: "World Cup 2010", imageUrl: "/sbc/jesus-navas/8.jpg" },
+      { name: "Euro 2012", imageUrl: "/sbc/jesus-navas/9.jpg" },
+      { name: "Premier League Title", imageUrl: "/sbc/jesus-navas/10.jpg" },
+      { name: "Europa League 2020", imageUrl: "/sbc/jesus-navas/11.jpg" },
+      { name: "Europa League 2023", imageUrl: "/sbc/jesus-navas/12.jpg" },
+      { name: "Nations League 2023", imageUrl: "/sbc/jesus-navas/13.jpg" },
+      { name: "Euro 2024", imageUrl: "/sbc/jesus-navas/14.jpg" },
+      { name: "Europa League TOTS", imageUrl: "/sbc/jesus-navas/15.jpg" },
+      { name: "Iconic RB", imageUrl: "/sbc/jesus-navas/16.jpg" },
+      { name: "Jesús Navas", imageUrl: "/sbc/jesus-navas/17.jpg" },
+      { name: "Navas' Hybrid", imageUrl: "/sbc/jesus-navas/18.jpg" },
+    ],
+    order: 10,
+  },
 ];
 
 export default sbcGroups;

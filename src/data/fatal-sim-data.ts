@@ -11,65 +11,66 @@ interface FatalSimSeries {
 
 const fatalSimSeries: FatalSimSeries[] = [
   {
-    name: "Series 77",
-    seriesNumber: 77,
+    name: "Series 78",
+    seriesNumber: 78,
     solutions: [
-      { imageUrl: "/fatal-sim/series77/1.jpg" },
-      { imageUrl: "/fatal-sim/series77/2.jpg" },
+      { imageUrl: "/fatal-sim/series78/1.jpg" },
+      { imageUrl: "/fatal-sim/series78/2.jpg" },
     ],
     order: 1,
   },
   {
-    name: "Series 80",
-    seriesNumber: 80,
+    name: "Series 81",
+    seriesNumber: 81,
     solutions: [
-      { imageUrl: "/fatal-sim/series80/1.jpg" },
-      { imageUrl: "/fatal-sim/series80/2.jpg" },
+      { imageUrl: "/fatal-sim/series81/1.jpg" },
+      { imageUrl: "/fatal-sim/series81/2.jpg" },
     ],
     order: 2,
   },
   {
-    name: "Series 84",
-    seriesNumber: 84,
+    name: "Series 85",
+    seriesNumber: 85,
     solutions: [
-      { imageUrl: "/fatal-sim/series84/1.jpg" },
-      { imageUrl: "/fatal-sim/series84/2.jpg" },
+      { imageUrl: "/fatal-sim/series85/1.jpg" },
+      { imageUrl: "/fatal-sim/series85/2.jpg" },
     ],
     order: 3,
   },
   {
-    name: "Series 87",
-    seriesNumber: 87,
+    name: "Series 88",
+    seriesNumber: 88,
     solutions: [
-      { imageUrl: "/fatal-sim/series87/1.jpg" },
-      { imageUrl: "/fatal-sim/series87/2.jpg" },
+      { imageUrl: "/fatal-sim/series88/1.jpg" },
+      { imageUrl: "/fatal-sim/series88/2.jpg" },
     ],
     order: 4,
   },
   {
-    name: "Series 91",
-    seriesNumber: 91,
+    name: "Series 90",
+    seriesNumber: 90,
     solutions: [
-      { imageUrl: "/fatal-sim/series91/1.jpg" },
-      { imageUrl: "/fatal-sim/series91/2.jpg" },
+      { imageUrl: "/fatal-sim/series90/1.jpg" },
+      { imageUrl: "/fatal-sim/series90/2.jpg" },
     ],
     order: 5,
   },
   {
-    name: "Series 95",
-    seriesNumber: 95,
+    name: "Series 93",
+    seriesNumber: 93,
     solutions: [
-      { imageUrl: "/fatal-sim/series95/1.jpg" },
-      { imageUrl: "/fatal-sim/series95/2.jpg" },
+      { imageUrl: "/fatal-sim/series93/1.jpg" },
+      { imageUrl: "/fatal-sim/series93/2.jpg" },
     ],
     order: 6,
   },
   {
     name: "Series X",
-    seriesNumber: 99,
+    seriesNumber: 99, // Using 99 for Series X to maintain sorting
     solutions: [
       { imageUrl: "/fatal-sim/seriesX/1.jpg" },
       { imageUrl: "/fatal-sim/seriesX/2.jpg" },
+      { imageUrl: "/fatal-sim/seriesX/3.jpg" },
     ],
     order: 7,
   },

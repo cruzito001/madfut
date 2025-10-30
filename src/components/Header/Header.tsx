@@ -10,7 +10,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <a href="/" className={styles.logo}>
-          <span className={styles.logoIcon}>25</span>
+          <span className={styles.logoIcon}>26</span>
           <span className={styles.logoText}>MADFUT</span>
         </a>
         <nav className={`${styles.nav} ${isMenuOpen ? styles.active : ""}`}>

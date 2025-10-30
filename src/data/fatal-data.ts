@@ -11,41 +11,34 @@ interface FatalSeries {
 
 const fatalSeries: FatalSeries[] = [
   {
-    name: "Series 77",
-    seriesNumber: 77,
-    solutions: [
-      { imageUrl: "/fatal/series77/1.jpg" },
-      { imageUrl: "/fatal/series77/2.jpg" },
-    ],
+    name: "Series 75",
+    seriesNumber: 75,
+    solutions: [{ imageUrl: "/fatal/series75/1.png" }],
     order: 1,
   },
   {
-    name: "Series 82",
-    seriesNumber: 82,
-    solutions: [
-      { imageUrl: "/fatal/series82/1.jpg" },
-      { imageUrl: "/fatal/series82/2.jpg" },
-      { imageUrl: "/fatal/series82/3.jpg" },
-    ],
+    name: "Series 79",
+    seriesNumber: 79,
+    solutions: [{ imageUrl: "/fatal/series79/1.png" }],
     order: 2,
   },
   {
-    name: "Series 85",
-    seriesNumber: 85,
-    solutions: [
-      { imageUrl: "/fatal/series85/1.jpg" },
-      { imageUrl: "/fatal/series85/2.jpg" },
-    ],
+    name: "Series 83",
+    seriesNumber: 83,
+    solutions: [{ imageUrl: "/fatal/series83/1.png" }],
     order: 3,
+  },
+  {
+    name: "Series 86",
+    seriesNumber: 86,
+    solutions: [{ imageUrl: "/fatal/series86/1.png" }],
+    order: 4,
   },
   {
     name: "Series 89",
     seriesNumber: 89,
-    solutions: [
-      { imageUrl: "/fatal/series89/1.jpg" },
-      { imageUrl: "/fatal/series89/2.jpg" },
-    ],
-    order: 4,
+    solutions: [{ imageUrl: "/fatal/series89/1.png" }],
+    order: 5,
   },
   {
     name: "Series 92",
@@ -54,26 +47,12 @@ const fatalSeries: FatalSeries[] = [
       { imageUrl: "/fatal/series92/1.jpg" },
       { imageUrl: "/fatal/series92/2.jpg" },
     ],
-    order: 5,
-  },
-  {
-    name: "Series 95",
-    seriesNumber: 95,
-    solutions: [
-      { imageUrl: "/fatal/series95/1.jpg" },
-      { imageUrl: "/fatal/series95/2.jpg" },
-      { imageUrl: "/fatal/series95/3.jpg" },
-    ],
     order: 6,
   },
   {
     name: "Series X",
     seriesNumber: 99, // Using 99 for Series X to maintain sorting
-    solutions: [
-      { imageUrl: "/fatal/seriesX/1.jpg" },
-      { imageUrl: "/fatal/seriesX/2.jpg" },
-      { imageUrl: "/fatal/seriesX/3.jpg" },
-    ],
+    solutions: [{ imageUrl: "/fatal/seriesX/1.png" }],
     order: 7,
   },
 ];

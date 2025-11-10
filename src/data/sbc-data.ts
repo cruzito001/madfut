@@ -110,6 +110,19 @@ const sbcGroups: SBCGroup[] = [
     ],
     order: 7,
   },
+  {
+    name: "Florian Thauvin",
+    imageUrl: "/sbc/florian-thauvin/florian-thauvin.png",
+    templatesCount: 5,
+    templates: [
+      { name: "France", imageUrl: "/sbc/florian-thauvin/1.jpg" },
+      { name: "PSG", imageUrl: "/sbc/florian-thauvin/2.jpg" },
+      { name: "Lille", imageUrl: "/sbc/florian-thauvin/3.jpg" },
+      { name: "Stade Rennais", imageUrl: "/sbc/florian-thauvin/4.jpg" },
+      { name: "Ligue 1", imageUrl: "/sbc/florian-thauvin/5.jpg" },
+    ],
+    order: 8,
+  },
 ];
 
 export default sbcGroups;
